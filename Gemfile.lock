@@ -1,0 +1,19 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    awesome_print (1.7.0)
+    dotenv (2.1.1)
+    jwt (1.5.6)
+    nexmo (4.3.1)
+      jwt
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  awesome_print
+  dotenv
+  nexmo
+
+BUNDLED WITH
+   1.13.6
