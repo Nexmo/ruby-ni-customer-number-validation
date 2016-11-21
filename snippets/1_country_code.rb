@@ -17,12 +17,6 @@ nexmo = Nexmo::Client.new
 
 # Perform a  Number Insight
 # basic inquiry
-insight = nexmo.get_basic_number_insight(
+p nexmo.get_basic_number_insight(
   number:  "442031980560"
 )
-
-# We use AwesomePrint to
-# pretty print the API
-# response
-require 'awesome_print'
-ap insight

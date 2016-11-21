@@ -22,8 +22,4 @@ insight = nexmo.get_advanced_number_insight(
   country: 'GB'
 )
 
-# We use AwesomePrint to
-# pretty print the API
-# response
-require 'awesome_print'
-ap insight['valid_number']
+p insight['valid_number']

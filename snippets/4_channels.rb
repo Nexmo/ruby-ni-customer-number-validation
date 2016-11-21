@@ -22,8 +22,4 @@ insight = nexmo.get_standard_number_insight(
   country: 'GB'
 )
 
-# We use AwesomePrint to
-# pretty print the API
-# response
-require 'awesome_print'
-ap insight['current_carrier']
+p insight['current_carrier']

@@ -22,13 +22,13 @@ insight = nexmo.get_basic_number_insight(
   country: 'GB'
 )
 
+# Fetch the voice and SMS pricing
 sms_pricing   = nexmo.get_sms_pricing(
   insight['international_format_number'])
 voice_pricing = nexmo.get_voice_pricing(
   insight['international_format_number'])
 
-# We use AwesomePrint to
-# pretty print the API
-# response
-require 'awesome_print'
-ap [sms_pricing, voice_pricing]
+p({
+  sms: sms_pricing,
+  voice: voice_pricing
+})
