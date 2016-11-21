@@ -1,3 +1,8 @@
+# Ensure we load all gems from
+# the Gemfile
+require 'bundler'
+Bundler.setup
+
 # Load environment variables
 # from the .env file
 require 'dotenv'
@@ -10,11 +15,10 @@ Dotenv.load
 require 'nexmo'
 nexmo = Nexmo::Client.new
 
-# Perform a Number Insight
-# standard inquiry
-insight = nexmo.get_number_insight(
-  number:  "020 3198 0560",
-  country: 'GB'
+# Perform a  Number Insight
+# basic inquiry
+insight = nexmo.get_basic_number_insight(
+  number:  "442031980560"
 )
 
 # We use AwesomePrint to

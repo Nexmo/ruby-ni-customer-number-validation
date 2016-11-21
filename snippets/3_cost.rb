@@ -1,3 +1,8 @@
+# Ensure we load all gems from
+# the Gemfile
+require 'bundler'
+Bundler.setup
+
 # Load environment variables
 # from the .env file
 require 'dotenv'
@@ -17,8 +22,13 @@ insight = nexmo.get_basic_number_insight(
   country: 'GB'
 )
 
+sms_pricing   = nexmo.get_sms_pricing(
+  insight['international_format_number'])
+voice_pricing = nexmo.get_voice_pricing(
+  insight['international_format_number'])
+
 # We use AwesomePrint to
 # pretty print the API
 # response
 require 'awesome_print'
-ap insight
+ap [sms_pricing, voice_pricing]

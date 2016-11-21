@@ -1,11 +1,17 @@
+GIT
+  remote: git://github.com/cbetta/nexmo-ruby.git
+  revision: bf0f7734625323b384c90bf73b11f9fc8fd27d3d
+  branch: develop
+  specs:
+    nexmo (4.3.1)
+      jwt
+
 GEM
   remote: https://rubygems.org/
   specs:
     awesome_print (1.7.0)
     dotenv (2.1.1)
     jwt (1.5.6)
-    nexmo (4.3.1)
-      jwt
 
 PLATFORMS
   ruby
@@ -13,7 +19,7 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   dotenv
-  nexmo
+  nexmo!
 
 BUNDLED WITH
    1.13.6
