@@ -13,7 +13,10 @@ Dotenv.load
 # NEXMO_API_SECRET environment
 # variables
 require 'nexmo'
-nexmo = Nexmo::Client.new
+nexmo = Nexmo::Client.new(
+  api_key: ENV['NEXMO_API_KEY'],
+  api_secret: ENV['NEXMO_API_SECRET']
+)
 
 # Perform a  Number Insight
 # basic inquiry
