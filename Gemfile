@@ -1,4 +1,4 @@
 source 'https://rubygems.org/'
 
-gem 'nexmo', github: "cbetta/nexmo-ruby", branch: 'develop'
+gem 'nexmo', '~> 4.4.0'
 gem 'dotenv'
