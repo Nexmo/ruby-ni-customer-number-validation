@@ -2,16 +2,16 @@ GEM
   remote: https://rubygems.org/
   specs:
     dotenv (2.1.1)
-    jwt (1.5.6)
-    nexmo (4.4.0)
-      jwt
+    jwt (2.1.0)
+    nexmo (5.4.0)
+      jwt (~> 2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   dotenv
-  nexmo (~> 4.4.0)
+  nexmo (~> 5.4.0)
 
 BUNDLED WITH
-   1.13.6
+   1.16.4

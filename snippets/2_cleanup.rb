@@ -15,11 +15,10 @@ Dotenv.load
 require 'nexmo'
 nexmo = Nexmo::Client.new
 
-# Perform a  Number Insight
-# basic inquiry
-insight = nexmo.get_basic_number_insight(
+# Perform a Number Insight Basic inquiry
+insight = nexmo.number_insight.basic(
   number:  "020 3198 0560",
   country: 'GB'
 )
 
-p insight['international_format_number']
+p insight.international_format_number
