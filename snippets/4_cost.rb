@@ -30,10 +30,8 @@ sms_pricing = nexmo.pricing.sms.get(current_country)
 voice_pricing = nexmo.pricing.voice.get(current_country)
 
 # Retrieve the network cost from the pricing data
-sms_cost = sms_pricing.networks.select{
-  |network| network.network_code == current_network}
-voice_cost = voice_pricing.networks.select{
-  |network| network.network_code == current_network}
+sms_cost = sms_pricing.networks.select{|network| network.network_code == current_network}
+voice_cost = voice_pricing.networks.select{|network| network.network_code == current_network}
 
 p({
   sms: sms_cost,
