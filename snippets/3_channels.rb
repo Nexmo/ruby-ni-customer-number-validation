@@ -15,11 +15,10 @@ Dotenv.load
 require 'nexmo'
 nexmo = Nexmo::Client.new
 
-# Perform a Number Insight
-# standard inquiry
-insight = nexmo.get_standard_number_insight(
+# Perform a Number Insight Standard inquiry
+insight = nexmo.number_insight.standard(
   number:  "020 3198 0560",
   country: 'GB'
 )
 
-p insight['current_carrier']
+p insight.current_carrier

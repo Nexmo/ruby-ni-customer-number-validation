@@ -1,4 +1,4 @@
 source 'https://rubygems.org/'
 
-gem 'nexmo', '~> 4.4.0'
+gem 'nexmo', '~> 5.4.0'
 gem 'dotenv'

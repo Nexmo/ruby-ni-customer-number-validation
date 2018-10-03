@@ -18,8 +18,7 @@ nexmo = Nexmo::Client.new(
   api_secret: ENV['NEXMO_API_SECRET']
 )
 
-# Perform a  Number Insight
-# basic inquiry
-p nexmo.get_basic_number_insight(
+# Perform a Number Insight Basic inquiry
+p nexmo.number_insight.basic(
   number:  "442031980560"
 )

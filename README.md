@@ -37,9 +37,9 @@ The scripts are:
 
 * `1_country_code.rb` shows how to find the country code for a number
 * `2_cleanup.rb` shows how to turn a local number into its international format
-* `3_cost.rb` is a little extra that shows how to then calculate the pricing of a number
-* `4_channels.rb` shows how to extract more details, like the channel format (landline or mobile) from a number
-* `5_validation.rb` shows how to validate a number is likely to be a real number
+* `3_channels.rb` shows how to extract more details, like the channel format (landline or mobile) from a number
+* `4_cost.rb` shows how to calculate the cost of a call or SMS to a number
+* `5_validation.rb` shows how to verify that a number is likely to be valid
 
 ## License
 
