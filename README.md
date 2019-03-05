@@ -1,6 +1,6 @@
 # Customer Number Validation
 
-A few Ruby snippets showing how you can use Nexmo Number Insight to validate and cleanup phone numbers.
+A few Ruby snippets showing how you can use Nexmo Number Insight to validate and cleanup phone numbers. You can find a detailed tutorial based on this code here: [https://developer.nexmo.com/tutorials/validate-a-number](https://developer.nexmo.com/tutorials/validate-a-number).
 
 ## Prerequisites
 
